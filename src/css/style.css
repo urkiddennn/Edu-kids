@@ -1,0 +1,526 @@
+:root {
+  --blue1: #83b4ff;
+  --blue2: #3a88ff;
+  --blue3: #0862ed;
+  --blue4: #bdd7ff;
+  --green1: #0c9249;
+  --green2: #32cd38;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--blue1);
+  overflow: hidden;
+}
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background-color: var(--blue2);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  height: 100vh;
+  gap: 5rem;
+}
+header ul li {
+  list-style: none;
+}
+.head-btn {
+  text-decoration: none;
+  font-size: 1.5rem;
+  background-color: var(--blue3);
+  color: white;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border-radius: 10px;
+}
+header ul li p {
+  font-size: 1.5rem;
+  color: white;
+}
+.content {
+  width: 100%;
+  height: 100%;
+}
+footer {
+  height: 80px;
+  background-color: var(--green1);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer p {
+  font-size: 1.5rem;
+  color: white;
+}
+.mask-icon-cont {
+  position: absolute;
+  top: 10rem;
+  left: 20%;
+  width: 850px;
+  height: 70px;
+  background-color: var(--blue4);
+  border-radius: 20px;
+}
+.logo {
+  left: 9%;
+  transform: translateY(-100px);
+  position: absolute;
+  z-index: 2;
+  width: 500px;
+  height: 500px;
+}
+
+.clouds {
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  top: 15rem;
+  left: 3rem;
+}
+.clouds2 {
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  top: 28rem;
+  left: 22rem;
+}
+.clouds3 {
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  top: 12rem;
+  left: 64rem;
+  z-index: -1;
+}
+.clouds4 {
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  top: 25rem;
+  left: 92rem;
+  z-index: -1;
+}
+.clouds5 {
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  top: 6rem;
+  left: 105rem;
+  z-index: -1;
+}
+.navbar {
+  position: absolute;
+  top: 13rem;
+
+  width: 550px;
+  height: 110px;
+  z-index: 100;
+  left: 40%;
+  display: flex;
+  justify-content: space-around;
+}
+.logo-icon {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+.logo-icon svg {
+  width: 90px;
+  fill: #d24c00;
+}
+.logo-icon p {
+  font-size: 2rem;
+}
+.logo-icon2 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+.logo-icon2 svg {
+  width: 80px;
+  fill: #004392;
+}
+.logo-icon2 p {
+  font-size: 2rem;
+}
+.logo-icon3 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+.logo-icon3 svg {
+  width: 90px;
+  fill: #ac1338;
+}
+.logo-icon3 p {
+  font-size: 2rem;
+}
+.logo-icon4 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+.logo-icon4 svg {
+  width: 90px;
+  fill: #ac1338;
+}
+.logo-icon4 p {
+  font-size: 2rem;
+}
+.oval {
+  position: absolute;
+  width: 120%;
+  height: 180px;
+  background: var(--green2);
+  border-radius: 50%;
+  z-index: -1;
+  bottom: -2rem;
+  left: -8rem;
+}
+.kids {
+  position: absolute;
+  bottom: -5rem;
+  left: 30%;
+  width: 550px;
+}
+.tree {
+  position: absolute;
+  width: 250px;
+  bottom: 5rem;
+  left: 3%;
+  z-index: -4;
+}
+.tree2 {
+  position: absolute;
+  width: 350px;
+  bottom: 8rem;
+  left: 45%;
+  z-index: -4;
+}
+.tree3 {
+  position: absolute;
+  width: 180px;
+  bottom: 8rem;
+  left: 85%;
+  z-index: -4;
+}
+.video-list {
+  width: 100%;
+  height: 70%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  margin-bottom: 20px;
+}
+.mask {
+  height: 280px;
+}
+
+.video-list ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 2rem;
+  z-index: 100;
+}
+.video-list ul li {
+  width: 30rem;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.video-card {
+  width: 40rem;
+  height: 100%;
+  background-color: blue;
+  margin: 20px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 3px 3px 5px 6px rgba(0, 0, 0, 0.25);
+  border: 5px solid white;
+  transition: 0.5s;
+}
+.video-card:hover {
+  width: 42rem;
+  height: 110%;
+  border: 5px solid #0862ed;
+}
+.video-card iframe {
+  width: 100%;
+  height: 100%;
+}
+#login {
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#login form {
+  width: 30%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  background-color: var(--blue3);
+  border-radius: 20px;
+  padding: 10px;
+}
+form h1 {
+  font-size: 3rem;
+  color: white;
+}
+.input {
+  width: 100%;
+  height: 40px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 3px;
+}
+.input input {
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 20px;
+}
+form button {
+  width: 120px;
+  height: 40px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: 700;
+}
+form p span {
+  color: wheat;
+  cursor: pointer;
+  border-bottom: 1px solid wheat;
+}
+.games {
+  width: 100%;
+  height: 70%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  margin-bottom: 20px;
+}
+.games ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 2rem;
+  z-index: 100;
+}
+.games ul li {
+  width: 30rem;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.game-card1 {
+  width: 40rem;
+  height: 100%;
+  margin: 20px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 3px 3px 5px 6px rgba(0, 0, 0, 0.25);
+  border: 5px solid white;
+  transition: 0.5s;
+  background-image: url(../assets/images/game-1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.game-card2 {
+  width: 40rem;
+  height: 100%;
+  margin: 20px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 3px 3px 5px 6px rgba(0, 0, 0, 0.25);
+  border: 5px solid white;
+  transition: 0.5s;
+  background-image: url(../assets/images/game-2.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.game-card3 {
+  width: 40rem;
+  height: 100%;
+  margin: 20px;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 3px 3px 5px 6px rgba(0, 0, 0, 0.25);
+  border: 5px solid white;
+  transition: 0.5s;
+  background-image: url(../assets/images/game-3.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.info {
+  width: 50%;
+  height: 70%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  margin-bottom: 20px;
+  border-radius: 15px;
+}
+.info p {
+  font-size: 2rem;
+  color: white;
+}
+.info svg {
+  width: 3rem;
+  fill: white;
+}
+.info-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  margin-bottom: 20px;
+  background-color: var(--blue3);
+  flex-direction: column;
+  padding: 20px;
+}
+#signup {
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#signup form {
+  width: 30%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  background-color: var(--blue3);
+  border-radius: 20px;
+  padding: 10px;
+}
+form h1 {
+  font-size: 3rem;
+  color: white;
+}
+.input {
+  width: 100%;
+  height: 40px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 3px;
+}
+.input input {
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 20px;
+}
+form button {
+  width: 120px;
+  height: 40px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: 700;
+}
+form p span {
+  color: wheat;
+  cursor: pointer;
+  border-bottom: 1px solid wheat;
+}
+.logout {
+  width: 50%;
+  height: 100%;
+  background-color: #004392;
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+}
+.logout button {
+  width: 120px;
+  height: 40px;
+  background-color: var(--blue3);
+  border: none;
+  outline: none;
+  color: white;
+}
+#clk {
+  cursor: pointer;
+}
